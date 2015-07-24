@@ -4,15 +4,13 @@
  * and open the template in the editor.
  */
 package com.github.gurelkaynak.recommendationengine;
-
+import com.github.gurelkaynak.recommendationengine.jdbi.DataModelFactory;
 import com.github.gurelkaynak.recommendationengine.jdbi.DataSourceFactory;
-import io.dropwizard.Configuration;
-import org.postgresql.ds.PGPoolingDataSource;
+import com.github.gurelkaynak.recommendationengine.core.RecommenderFactory;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.github.gurelkaynak.recommendationengine.jdbi.DataModelFactory;
-import com.github.gurelkaynak.recommendationengine.core.RecommenderFactory;
-//import org.hibernate.validator.constraints.NotEmpty;
+import io.dropwizard.Configuration;
+
 
 
 /**

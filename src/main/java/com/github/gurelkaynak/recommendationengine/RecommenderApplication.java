@@ -12,7 +12,6 @@ import io.dropwizard.setup.Environment;
 import com.github.gurelkaynak.recommendationengine.resources.RecommendationResource;
 import org.apache.mahout.cf.taste.common.TasteException;
 import org.apache.mahout.cf.taste.impl.model.jdbc.ReloadFromJDBCDataModel;
-//import org.apache.mahout.cf.taste.model.DataModel;
 import org.apache.mahout.cf.taste.recommender.ItemBasedRecommender;
 import org.apache.mahout.cf.taste.recommender.Recommender;
 import org.postgresql.ds.PGPoolingDataSource;
@@ -42,11 +41,10 @@ public class RecommenderApplication extends Application<RecommenderConfiguration
                     Environment environment) {
         
         PGPoolingDataSource pgPoolingDataSource = configuration.getDataSourceFactory().build(environment);
-        ReloadFromJDBCDataModel dataModel;
+        ReloadFromJDBCDataModel dataModel = null;
         try {
             dataModel = configuration.getDataModelFactory().build(pgPoolingDataSource);
         } catch (TasteException e) {
-            dataModel = null;
             System.err.println(e);
             System.exit(-1);
         }

@@ -13,7 +13,6 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import org.apache.mahout.cf.taste.common.TasteException;
-import org.apache.mahout.cf.taste.impl.model.jdbc.PostgreSQLJDBCDataModel;
 import org.apache.mahout.cf.taste.impl.model.jdbc.ReloadFromJDBCDataModel;
 import com.github.gurelkaynak.recommendationengine.api.DataModel;
 
