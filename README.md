@@ -3,7 +3,7 @@ Dropwizard + Apache Mahout Recommendation Engine
 
 Served with dropwizard. Data input support for postgres database only.
 
-# How does it work?
+# Setup
 - Setup config.yml with your settings.
 - build project (I used NetBeans)
 - Run jar: java -jar RecommendationEngine-VERSION.jar server your_config.yml
