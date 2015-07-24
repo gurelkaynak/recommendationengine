@@ -16,4 +16,5 @@ Served with dropwizard. Data input support for postgres database only.
 - Make dataSource adaptable for other database servers. 
 - API endpoint for getting recommendations with desired algorithm
 - Authorization/Authentication
+- Dropwizard health-checks
 
