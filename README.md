@@ -1,7 +1,10 @@
 # Recommendation Engine Service API
-Dropwizard + Apache Mahout Recommendation Engine
+Apache Mahout recommendations (http://mahout.apache.org/) as a RESTful web service served with dropwizard (http://www.dropwizard.io/).  
 
-Served with dropwizard. Data input support for postgres database only.
+# Requirements
+- Java 1.7 
+- Postgres database server (required)
+- Ratings table or view like "user_id, item_id, rating ..."
 
 # Setup
 - Setup config.yml with your settings
