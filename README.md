@@ -4,17 +4,18 @@ Dropwizard + Apache Mahout Recommendation Engine
 Served with dropwizard. Data input support for postgres database only.
 
 # Setup
-- Setup config.yml with your settings.
+- Setup config.yml with your settings
 - build project (I used NetBeans)
 - Run jar: java -jar RecommendationEngine-VERSION.jar server your_config.yml
 
 # Get Requests
 - http://localhost:9000/recommendation/user/{userId}/{howMany}
 - http://localhost:9000/recommendation/item/{itemId}/{howMany}
+- http://localhost:9000/datamodel/update/ refreshes the datamodel for new user-item pairs
 
 # TODO
-- Make dataSource adaptable for other database servers. 
-- API endpoint for getting recommendations with desired algorithm
+- Make dataSource adaptable for other database servers
+- Updating dataModel with different algorithm at runtime or create endpoints for all or some algorithms
 - Authorization/Authentication
 - Dropwizard health-checks
 
