@@ -1,0 +1,25 @@
+server:
+  applicationConnectors:
+  - type: http 
+    port: 9000
+  adminConnectors:
+  - type: http
+    port: 9001
+    
+dataSource:
+    host: localhost
+    port: 5432
+    db: your_postgres_database_name
+    user: postgres_user
+    password: postgres_password
+    maxConnections: 10
+    
+dataModel:
+    table: your_ratings_table
+    userField: user_id_field_name
+    itemField: item_id_field_name
+    ratingField: rating_field_name
+    
+recommender:
+    userNeighborhoodAlgorithm: threshold
+    nearestNUserValue: 300
