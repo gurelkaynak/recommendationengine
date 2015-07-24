@@ -18,3 +18,8 @@ Served with dropwizard. Data input support for postgres database only.
 - Authorization/Authentication
 - Dropwizard health-checks
 
+# Thanks
+To google and these posts: 
+https://chameerawijebandara.wordpress.com/2014/01/15/simple-recommendation-system-with-mahout-and-netbeans/
+http://xorlev.com/blog/2012/09/30/web-machine-learning/
+
